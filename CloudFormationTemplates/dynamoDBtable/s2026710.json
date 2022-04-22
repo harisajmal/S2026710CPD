@@ -1,0 +1,52 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "73f93500-39d9-4cf9-a1d1-71060b745dc6": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 179,
+                    "y": 126
+                },
+                "z": 0
+            }
+        }
+    },
+    "Resources": {
+        "DDBT4WO59": {
+            "Type": "AWS::DynamoDB::Table",
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "73f93500-39d9-4cf9-a1d1-71060b745dc6"
+                }
+            },
+            "Properties": {
+                "TableName": "S2026710",
+                "BillingMode": "PAY_PER_REQUEST",
+                "KeySchema": [
+                    {
+                        "AttributeName": "image-name",
+                        "KeyType": "HASH"
+                    },
+                    {
+                        "AttributeName": "label",
+                        "KeyType": "RANGE"
+                    }
+                ],
+                "AttributeDefinitions": [
+                    {
+                        "AttributeName": "image-name",
+                        "AttributeType": "S"
+                    },
+                    {
+                        "AttributeName": "label",
+                        "AttributeType": "S"
+                    }
+                ]
+            }
+        }
+    }
+}
